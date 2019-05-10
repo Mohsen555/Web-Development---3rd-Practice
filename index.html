@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Crypto Prices</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="crypto-image">
+    <div class="crypto-text">
+      <h1>Crypto Prices</h1>
+      <form action="/" class="form-inline" method="POST">
+        <input type="text" class="form-control" name="amount" placeholder="Quantity">
+        <select name="crypto" class="form-control">
+          <option value="BTC">Bitcoin</option>
+          <option value="ETH">Ethereum</option>
+          <option value="LTC">Litecoin</option>
+          <option value="XRP">Ripple</option>
+        </select>
+
+        <select name="fiat" class="form-control">
+          <option value="USD">US Dollars</option>
+          <option value="GBP">GB Pounds</option>
+          <option value="EUR">EU Europs</option>
+        </select>
+
+        <button type="submit" name="button" class="btn btn-lg btn-danger lead">Check</button>
+      </form>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> Mohsen Kheirabadi </a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>
