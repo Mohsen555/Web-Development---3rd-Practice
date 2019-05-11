@@ -2,6 +2,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
+const http = require('http');
 
 const app = express();
 
@@ -42,6 +43,8 @@ app.post("/", function(req,res){
 
 });
 
-app.listen(process.env.PORT || 3000, function(){
-  console.log("Server is running on port 3000");
+var httpServer = http.createServer(app);
+
+httpServer.listen(8080, function(){
+  console.log("Server is running on port 8080");
 });
